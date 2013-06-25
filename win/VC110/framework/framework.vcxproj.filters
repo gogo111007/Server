@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\framework\Network\SHNetwork.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\framework\Network\SHSocket.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\framework\Network\SHSocketGroup.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\framework\Util\SHUtil.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\framework\Util\SHByteBuffer.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\framework\Util\SHTimer.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\framework\Singleton\SHSingleton.cpp">
+      <Filter>Singleton</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\framework\Platform\CompilerDef.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\framework\Platform\Define.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\framework\SHFramework.h" />
+    <ClInclude Include="..\..\..\src\framework\Network\SHNetwork.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\framework\Network\SHSocket.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\framework\Network\SHSocketGroup.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\framework\Network\SHReleaseMgr.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\framework\Network\SHNetworkDef.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\framework\Exception\SHException.h">
+      <Filter>Exception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\framework\Util\SHUtil.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\framework\Util\SHByteConverter.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\framework\Util\SHByteBuffer.inl">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\framework\Util\SHByteBuffer.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\framework\Util\SHTimer.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\framework\Singleton\SHSingleton.h">
+      <Filter>Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\framework\Util\SHTypeContainer.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Network">
+      <UniqueIdentifier>{fd3a0908-abd2-4d59-bcc6-f912034ffe4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{79a1e048-ee89-4af0-875f-333581999645}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exception">
+      <UniqueIdentifier>{1b33b9a3-4f1f-43a2-bf82-b6b97dc343b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{ace2536d-2a09-4c83-9f0a-501771471d3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Singleton">
+      <UniqueIdentifier>{1da1146a-8e3a-48a1-9b38-5296672cec05}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\src\framework\Network\SHSocket.inl">
+      <Filter>Network</Filter>
+    </None>
+    <None Include="..\..\..\src\framework\Network\SHSocketGroup.inl">
+      <Filter>Network</Filter>
+    </None>
+    <None Include="..\..\..\src\framework\Network\SHReleaseMgr.inl">
+      <Filter>Network</Filter>
+    </None>
+    <None Include="..\..\..\src\framework\Util\SHUtil.inl">
+      <Filter>Util</Filter>
+    </None>
+    <None Include="..\..\..\src\framework\Exception\SHException.code.inc">
+      <Filter>Exception</Filter>
+    </None>
+  </ItemGroup>
+</Project>

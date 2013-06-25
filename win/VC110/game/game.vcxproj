@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\game\Object\Creature.cpp" />
+    <ClCompile Include="..\..\..\src\game\Object\GameObject.cpp" />
+    <ClCompile Include="..\..\..\src\game\Object\Item.cpp" />
+    <ClCompile Include="..\..\..\src\game\Object\Object.cpp" />
+    <ClCompile Include="..\..\..\src\game\Object\Player.cpp" />
+    <ClCompile Include="..\..\..\src\game\Object\Unit.cpp" />
+    <ClCompile Include="..\..\..\src\game\Object\WorldObject.cpp" />
+    <ClCompile Include="..\..\..\src\game\Server\MsgCode.cpp" />
+    <ClCompile Include="..\..\..\src\game\Server\SocketEventHandler.cpp" />
+    <ClCompile Include="..\..\..\src\game\Server\WorldSession.cpp" />
+    <ClCompile Include="..\..\..\src\game\Game.cpp" />
+    <ClCompile Include="..\..\..\src\game\Server\WorldSocket.cpp" />
+    <ClCompile Include="..\..\..\src\game\World\Grid.cpp" />
+    <ClCompile Include="..\..\..\src\game\World\Map.cpp" />
+    <ClCompile Include="..\..\..\src\game\World\MapManager.cpp" />
+    <ClCompile Include="..\..\..\src\game\World\ObjectManager.cpp" />
+    <ClCompile Include="..\..\..\src\game\World\TimeLine.cpp" />
+    <ClCompile Include="..\..\..\src\game\World\World.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\game\Object\Creature.h" />
+    <ClInclude Include="..\..\..\src\game\Object\GameObject.h" />
+    <ClInclude Include="..\..\..\src\game\Object\Item.h" />
+    <ClInclude Include="..\..\..\src\game\Object\Object.h" />
+    <ClInclude Include="..\..\..\src\game\Object\Player.h" />
+    <ClInclude Include="..\..\..\src\game\Object\Unit.h" />
+    <ClInclude Include="..\..\..\src\game\Object\WorldObject.h" />
+    <ClInclude Include="..\..\..\src\game\Server\MsgCode.h" />
+    <ClInclude Include="..\..\..\src\game\Server\SocketEventHandler.h" />
+    <ClInclude Include="..\..\..\src\game\Server\WorldPacket.h" />
+    <ClInclude Include="..\..\..\src\game\Server\WorldSession.h" />
+    <ClInclude Include="..\..\..\src\game\Game.h" />
+    <ClInclude Include="..\..\..\src\game\Server\WorldSocket.h" />
+    <ClInclude Include="..\..\..\src\game\World\Grid.h" />
+    <ClInclude Include="..\..\..\src\game\World\Map.h" />
+    <ClInclude Include="..\..\..\src\game\World\MapManager.h" />
+    <ClInclude Include="..\..\..\src\game\World\ObjectManager.h" />
+    <ClInclude Include="..\..\..\src\game\World\TimeLine.h" />
+    <ClInclude Include="..\..\..\src\game\World\World.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D10E30AE-22A0-41D2-9E89-9383B7A81C50}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>game</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\temp\game__$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>..\temp\game__$(Platform)_$(Configuration)\</IntDir>
+    <TargetExt>.lib</TargetExt>
+    <IncludePath>..\..\..\dep\include;..\..\..\src\shared;..\..\..\src\framework;..\..\..\src\framework\Util;..\..\..\src\framework\Network;..\..\..\src\framework\Exception;..\..\..\src\framework\Platform;..\..\..\src\framework\Singleton;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\..\dep\lib\x86;..\temp\framework__$(Platform)_$(Configuration);..\temp\shared__$(Platform)_$(Configuration);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\temp\game__$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>..\temp\game__$(Platform)_$(Configuration)\</IntDir>
+    <TargetExt>.lib</TargetExt>
+    <IncludePath>..\..\..\dep\include;..\..\..\src\shared;..\..\..\src\framework;..\..\..\src\framework\Util;..\..\..\src\framework\Network;..\..\..\src\framework\Exception;..\..\..\src\framework\Platform;..\..\..\src\framework\Singleton;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\..\dep\lib\x86;..\temp\framework__$(Platform)_$(Configuration);..\temp\shared__$(Platform)_$(Configuration);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
+      <AdditionalIncludeDirectories>..\..\..\src\game;..\..\..\src\game\Server;..\..\..\src\game\World;..\..\..\src\game\Object;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>shared.lib;framework.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
+      <AdditionalIncludeDirectories>..\..\..\src\game;..\..\..\src\game\Server;..\..\..\src\game\World;..\..\..\src\game\Object;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>shared.lib;framework.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
